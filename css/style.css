@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+.container table {
+  padding: 0 20px;
+  position: absolute;
+  display: block;
+  /* width: 10%; */
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  flex-direction: column;
+  text-align: center;
+  border: 3px solid rebeccapurple;
+  border-top: 0px;
+}
+.container table td {
+  border: 1px solid rebeccapurple;
+}
+.container table::after {
+  display: block;
+  position: absolute;
+  top: -14px;
+  left: -23px;
+  background: transparent;
+  content: "";
+  width: 20px;
+  z-index: 1;
+  height: 20px;
+  border-top: 3px solid rebeccapurple;
+  border-right: 3px solid rebeccapurple;
+  border-top-right-radius: 50%;
+}
+
+.container table::before {
+  display: block;
+  position: absolute;
+  top: -14px;
+  right: -23px;
+  background: transparent;
+  content: "";
+  width: 20px;
+  z-index: 1;
+  height: 20px;
+  border-top: 3px solid rebeccapurple;
+  border-left: 3px solid rebeccapurple;
+  border-top-left-radius: 50%;
+}
+.inputss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 200px;
+}
+.inputss .btns {
+  margin-top: 10px;
+}
+
+.container input {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 1.1rem 1.1rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 80%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.container button {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: rebeccapurple;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.container button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.container button:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
